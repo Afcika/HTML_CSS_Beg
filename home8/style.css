@@ -1,0 +1,1288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Gill Sans", sans-serif;
+  scroll-behavior: smooth;
+ 
+}
+
+header {
+  height: 42px;
+  background-color: #161616;
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header img {
+  box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+}
+
+nav {
+  height: 62px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+ 
+
+}
+
+/* ????? */
+
+.left {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 0 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ???? */
+
+.rightt {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+  gap: 20px;
+}
+.rightt li {
+  display: flex;
+  font-size: 18px;
+  line-height: 27px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightt li img {
+  width: 20px;
+  height: 25px;
+}
+
+
+
+.infoResourcesinfo{
+    position: absolute;
+    background-color: grey;
+    height: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.9);
+    left: 45em;
+    top: 2em;
+    line-height: 15px;
+    width: 250px;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+
+
+.infoResourcesinfo span{
+    padding: 10px 10px 12px 30px;
+    font-size: 14px;
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+
+
+
+.Commitments{
+    left: 37em;
+    width: 220px;
+}
+.About{
+    left: 32em; 
+    width: 200px;
+}
+.Experiences{
+    width: 250px;
+    left: 22em; 
+}
+
+.Games{ 
+    width: 400px;
+    line-height: 15px;
+    font-size: 17px;
+    left: 16em; 
+    
+}
+.Gamesflex{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    padding: 30px 10px;
+}
+.Games div h3{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 5px;
+    font-size: 18px;
+    padding: 10px 10px 12px 30px;
+}
+.Games .Gamesflex1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+.infoResourcesinfo span:hover{
+    color: red;
+}
+ .rightt li:hover .infoResourcesinfo{
+  top: 3.8em;
+    height: 240px;
+    visibility: visible; 
+}
+.rightt li:hover .About{
+    height: 260px; 
+}
+.rightt li:hover .Experiences{
+    height: 200px; 
+}
+
+.rightt li:hover .Games{
+    height: 350px; 
+    top: 4em;
+}
+
+
+
+
+
+
+
+
+
+.colordsec {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/eacom-2023-pc-games-page-headline-standard-small-inline-cta-background.jpg.adapt.1920w.jpg);
+  box-sizing: border-box;
+  background-position: center;
+  background-position: top;
+  box-sizing: border-box;
+}
+
+.secfelx {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.secleft {
+  width: auto;
+}
+.secleft h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.secright {
+  display: flex;
+  gap: 10px;
+}
+.secright button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: white;
+  background: transparent;
+  padding: 15px 30px;
+  border: 2px solid white;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+.secright button:hover{
+    transform: scale(1.05);
+}
+
+.hero {
+  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/eacom-pc-games-page-top-section-header-xl.jpg.adapt.1920w.jpg);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  padding-top: 100px;
+  font-size: 50px;
+  color: white;
+  font-weight: 800;
+}
+
+/* burgermenue one */
+
+.burgerone {
+  visibility: hidden;
+  flex-direction: column;
+  position: absolute;
+  gap: 5px;
+  background-color: white;
+  width: 420px;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  height: 1000px;
+  z-index: 999;
+}
+#chk {
+  visibility: hidden;
+}
+
+#chk:checked ~ .burgerone {
+  visibility: visible;
+}
+
+.burgericonone {
+  width: 20px;
+  height: 20px;
+}
+
+.xx2 {
+  height: 16px;
+}
+.burgeronehead {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5em;
+  height: 110px;
+  width: 100%;
+}
+.burgeronehead h2 {
+  font-size: 20px;
+  color: gray;
+}
+
+.imgburflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.burflexmainimg {
+  height: 335px;
+  height: 335px;
+}
+.buroneimgflex img {
+  width: 150px;
+  height: 150px;
+}
+.buroneimgflex {
+  gap: 32px;
+  display: flex;
+}
+
+.burgertwoimg {
+  display: none;
+}
+
+.burgertwo {
+  display: none;
+}
+
+/* burgermenue one */
+
+.cards {
+  height: 100%;
+  background-color: #f3f3f3;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  box-sizing: border-box;
+}
+.cardshead {
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.cardflex {
+  display: flex;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.cardone {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2021/06/battlefield-2042-key-art.jpg.adapt.crop1x1.767w.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardtwo {
+  background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2022/05/1-1-gamebox-f122-keyart-1.png.adapt.crop1x1.767w.png);
+}
+.cardthree {
+  background-image: url(https://media.contentapi.ea.com/content/dam/gin/images/2022/07/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767w.jpg);
+}
+.cardone img {
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  transition: all 0.5s ease-out;
+}
+
+.cardone::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(9, 13, 90, 0.9) 10%, rgba(13, 16, 66, 0.9));
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.cardone:hover::before {
+  opacity: 1;
+}
+
+.cardone:hover img {
+  margin-bottom: 7em;
+}
+
+.cardone p {
+  position: absolute;
+  visibility: hidden;
+  color: white;
+  transition: display 1s ease-in;
+}
+
+.cardone:hover p {
+  margin-top: 2em;
+  visibility: visible;
+}
+
+.cardtext {
+  text-align: center;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.cardtext p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.cardredtext {
+  color: red;
+  text-decoration: none;
+}
+
+.Featured {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.Featured hr {
+  box-sizing: border-box;
+  width: 100%;
+}
+.Featured ul {
+  display: flex;
+  list-style: none;
+}
+.Featured ul li {
+  font-size: 20px;
+  padding: 20px;
+}
+.Featuredgrey {
+  background-color: #e9e7e7;
+  text-decoration: underline blue 2px;
+  text-underline-offset: 110%;
+}
+.Featuredliborder {
+  position: relative;
+  transition: 0.3s;
+}
+
+.Featuredliborder::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 15px;
+  height: 30px;
+  width: 10%;
+  border-left: 2px solid rgb(209, 207, 207);
+}
+
+.Featuredliborder:hover {
+  background-color: #e9e7e7;
+}
+
+.LatestGames {
+  height: 100%;
+
+    
+  width: 100%;
+  background-color: #f3f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+.LatestGamesup {
+  gap: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LatestGamesup .Filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.Filter h1 {
+  font-size: 44px;
+}
+
+.Filter button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.Filter button:hover {
+  transform: scale(1.1);
+}
+
+.pages {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 700px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.pages img{
+    box-sizing: border-box;
+}
+.pages .pagesright {
+  border-right: 2px solid;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.pages .pagesleft {
+  border-left: 2px solid;
+  height: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.LatestGamescards1 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2022/07/eas-fifa22-gen5-ue-keyart-horz-f23logo.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards2 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2021/07/fifa22-key-art.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards3 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2020/06/fifa21-keyart-horizontal-16x9.png.adapt.crop1x1.767p.png);
+  background-size: cover;
+}
+.LatestGamescards4 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2019/06/fifa20-gin-keyart.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards5 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2017/01/fifa-15-key-art.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards5 img {
+  width: 150px;
+  height: 50px;
+}
+
+.LatestGamescards6 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2017/01/fifa-14-key-art.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards6 img {
+  width: 150px;
+  height: 50px;
+}
+
+.LatestGamescards7 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2017/01/fifa-manager-13-key-art.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards7 img {
+  width: 150px;
+  height: 30px;
+}
+
+.LatestGamescards8 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2017/01/fifa-13-key-art.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards8 img {
+  width: 150px;
+  height: 40px;
+}
+
+.LatestGamescards9 {
+  background: linear-gradient(rgba(45, 45, 46, 0.4) 10%, rgba(45, 45, 46, 0.4)),
+    url(https://media.contentapi.ea.com/content/dam/gin/images/2017/01/fifa-manager-12-key-art.jpg.adapt.crop1x1.767p.jpg);
+  background-size: cover;
+}
+.LatestGamescards9 img {
+  width: 180px;
+  height: 40px;
+}
+
+.LatestGamescards p {
+  font-size: 18px;
+}
+.LatestGamescards .LatestGamescards1hr1 {
+  width: 25%;
+  height: 0.5px;
+  background-color: rgb(94, 89, 89);
+  border: none;
+  position: absolute;
+  visibility: hidden;
+}
+.LatestGamescards1:hover .LatestGamescards1hr1,
+.LatestGamescards2:hover .LatestGamescards1hr1,
+.LatestGamescards3:hover .LatestGamescards1hr1,
+.LatestGamescards4:hover .LatestGamescards1hr5,
+.LatestGamescards5:hover .LatestGamescards1hr1,
+.LatestGamescards6:hover .LatestGamescards1hr1,
+.LatestGamescards7:hover .LatestGamescards1hr1,
+.LatestGamescards8:hover .LatestGamescards1hr1,
+.LatestGamescards9:hover .LatestGamescards1hr1 {
+  visibility: visible;
+  margin-top: 80px;
+}
+
+.LatestGamescards span {
+  color: #a3a3a3;
+}
+.Lcardspam {
+  /* visibility: visible; */
+  color: gold;
+  opacity: 0;
+  top: 10em;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  transition: top 0.5s ease;
+}
+
+.cardone:hover .Lcardspam {
+  top: 13em;
+  opacity: 1;
+}
+
+.xhr2 {
+  width: 25%;
+  height: 0.5px;
+  background-color: rgb(94, 89, 89);
+  border: none;
+  opacity: 0;
+  top: 10em;
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  transition: top 0.5s ease;
+}
+
+.cardone:hover .xhr2 {
+  top: 14.5em;
+  opacity: 1;
+}
+
+.cardone:hover .am2 {
+  top: 15.3em;
+  opacity: 1;
+}
+
+.Latecardflex {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+justify-content: center;
+  max-width: 1150px;
+  align-items: center;
+  
+}
+
+
+
+
+
+.LatestGamesdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 750px;
+    width: 100%;
+}
+.longcardup {
+  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2024/01/eacom-ea-play-hero-md-grid-7x2-xl.jpg.adapt.crop7x2.1920w.jpg);
+  background-size: cover;
+  width: 1103px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+}
+.longcardup div {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 30px;
+}
+.longcardup div img {
+  width: 180px;
+}
+.longcardup div p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+}
+.longcardup div button {
+  padding: 17px 40px;
+  background-color: #ff4747;
+  border: none;
+  font-size: 19px;
+  border-radius: 3px;
+  color: white;
+  transition: 0.5s ease;
+  width: 165px;
+}
+.longcardup div button:hover {
+  transform: scale(1.1);
+}
+
+.longcarddown {
+  background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/pogo-heromed-xl-7x2.jpg.adapt.crop7x2.1920w.jpg);
+  background-size: cover;
+  width: 1103px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+}
+.longcarddown .longcarddowntext{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;   
+}
+
+.longcarddowntext img{
+        padding: 0 0 30px;
+}
+
+.longcarddown .longcarddowntext p{
+    font-size: 18px;
+    color: white;
+}
+.longcarddownbuttonflex{
+    display: flex;
+    gap:20px
+}
+.longcarddownbuttonflex button {
+    padding: 20px 40px;
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    transition: 0.5s ease;
+}
+.longcarddownbuttonflex button:hover{
+    transform: scale(1.1);
+}
+
+
+.Conversation{
+    width: 100%;
+    height: 210px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12em;
+}
+/* .Conversationflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+
+.Conversationleft{
+    display: flex;
+    gap: 50px;
+    font-size: 16px;
+    align-items: start;
+    height: 50%;
+  
+}
+.Conversationleft span{
+    transition: 0.2s ease;
+}
+.Conversationleft span:hover{
+    color: red;
+}
+
+.Conversationright{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: start;
+    height: 50%;
+ 
+    
+}
+
+.Conversationright svg{
+    height: 25px;width: 25px;
+    transition: 0.5s ease;
+}
+.Conversationright svg:hover{
+    transform: scale(1.4);
+}
+.Conversationright div {
+    display: flex;
+    gap: 20px;
+}
+.Conversationright span{
+    text-align: right;
+    font-weight: 700;
+    
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #f3f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footermiddle{
+    display: flex;
+    justify-content: center;
+    gap: 17em;
+}
+.middleleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.middleleft div{
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+}
+.middleleft div span{
+    font-size: 18px;
+}
+.middleleftbutton button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 25px;
+    border: 2px solid #a3a3a3;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    gap: 5px;
+    transition: 0.5s ease;
+}
+.middleleftbutton button:hover{
+    transform: scale(1.05);
+}
+
+.middleleftbutton div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.footerbottom{
+    display: flex;
+    justify-content: center;
+    gap: 20em;
+    
+}
+.footerbottomup{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footerbottomup div{
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+}
+.footerbottomflex{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+.footerbottomfleximg{
+    justify-content: end;
+    align-items: end;
+    display: flex;
+    
+}
+
+.footermiddledivflex{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footerright img{
+    width: 70px;
+    height: 70px ;
+    margin-block: -20px;
+}
+.footerright {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 240px;
+}
+
+
+@media only screen and (max-width: 1270px) {
+  .cardflex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Latecardflex{
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .cardtext p {
+    font-size: 17px;
+    width: 800px;
+  }
+  br {
+    display: none;
+  }
+
+  .Featured ul li {
+    font-size: 18px;
+    padding: 18px;
+  }
+
+
+  .longcardup,.longcarddown{
+    width: 1000px;
+
+  }
+  .longcardup{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2024/01/eacom-ea-play-hero-md-grid-7x2-xl.jpg.adapt.crop5x2.1455w.jpg);
+
+}
+  .longcarddown{
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/pogo-heromed-xl-7x2.jpg.adapt.crop5x2.1455w.jpg);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .right {
+    display: none;
+  }
+
+
+  .secright button {
+    padding: 12px 25px;
+  }
+  .secleft h1 {
+    font-size: 28px;
+  }
+
+  .hero {
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/eacom-pc-games-page-top-section-header-xl.jpg.adapt.1024w.jpg);
+    background-size: cover;
+  }
+
+  .Featured ul li {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .foothide {
+    display: none;
+  }
+  .Conversationleft{
+    gap: 30px;
+  }
+  .Conversation{
+    gap: 20px;
+  }
+
+  .footerright img{
+    width: 50px;
+    height: 50px ;
+    margin-block: -10px;
+}
+.middleleft div{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.middleleft div span{
+    font-size: 16px;
+}
+.footerbottomup{
+    font-size: 16px;
+}
+.footerbottom{
+    gap: 11em;
+}
+.middleleft{
+    gap: 10px;
+}
+}
+@media only screen and (max-width:1100px) {
+
+
+    .longcardup,.longcarddown{
+        width: 700px;
+    
+      }
+      .longcardup{
+        background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2024/01/eacom-ea-play-hero-md-grid-7x2-xl.jpg.adapt.crop2x1.1023w.jpg);
+    
+    }
+      .longcarddown{
+        background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/pogo-heromed-xl-7x2.jpg.adapt.crop2x1.1023w.jpg);
+      }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .secfelx {
+    flex-direction: column;
+  }
+  .colordsec {
+    height: 110px;
+  }
+  .secright button {
+    padding: 10px 20px;
+  }
+  .secleft h1 {
+    font-size: 24px;
+  }
+
+  .navimg {
+    width: 120px;
+    height: 20px;
+  }
+
+  .burgeroneimg {
+    display: none;
+  }
+  .burgertwoimg {
+    display: flex;
+  }
+  .left {
+    padding: 0 0 0 10px;
+  }
+
+  .hero {
+    background-image: url(https://media.contentapi.ea.com/content/dam/eacom/common/eacom-pc-games-page-top-section-header-xl.jpg.adapt.768w.jpg);
+    background-size: cover;
+  }
+
+  .burgerone {
+    width: 375px;
+    height: 1020px;
+  }
+
+  .makehide {
+    display: none;
+  }
+
+  .burgertwo {
+    display: block;
+  }
+  .burtwoinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* gap: 16.3em; */
+
+
+
+
+    /* ????? */
+  }
+  .burtwoinfo h2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .burtwoinfo img {
+    height: 27px;
+    width: 25px;
+  }
+
+  .burtwoinfo {
+    border-bottom: 1.2px solid;
+    width: 90%;
+    padding: 15px 0;
+  }
+  .burtwoclasses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burgertwonav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 6em;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #f3f3f3;
+  }
+
+  .xx2 {
+    height: 40px;
+  }
+
+  .foothidee {
+    display: none;
+  }
+
+  .cardtext p {
+    font-size: 17px;
+    width: 400px;
+  }
+
+
+
+
+
+.Filter h1{
+    font-size: 35px;
+}
+
+.Filter button{
+    font-size: 16px;
+    padding: 12px 22px;
+
+}
+
+.Conversation{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    gap: 15px;
+}
+.Conversationleft{
+    height: fit-content;
+}
+.Conversationright span{
+    text-align: left;
+
+
+}
+
+
+
+.Conversationleft,.Conversationright{
+    padding-left: 55px;
+}
+
+footer{
+    flex-direction: column  ;
+}
+.footerright{
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+
+    
+}
+
+.middleleft{
+    display: flex;
+    flex-direction: row;
+}
+
+.footermiddle{
+    flex-direction: column;
+    gap: 1px;
+}
+
+.middleleftbutton button{
+    width: 580px;
+    justify-content: center;
+}
+.middleleftbutton{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footerbottom{
+    flex-direction: column;
+    gap: 0;
+
+}
+.footerbottomup div span{
+    font-size: 12px;
+}
+.footerbottomflex div span{
+    font-size: 12px;
+}
+
+
+.pages img{
+    width: 280px;
+    height: 40px;
+
+}
+.pages{
+    width: 470px;
+}
+.pages p{
+   font-size: 12px;
+}
+}
+
+
+
+
+@media only screen and (max-width:750px) {
+
+
+    .longcardup,.longcarddown{
+        width: 450px;
+        height: 700px;
+    
+      }
+      .longcardup{
+        background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2024/01/eacom-ea-play-hero-md-grid-7x2-xl.jpg.adapt.crop3x5.767w.jpg);
+    
+    }
+      .longcarddown{
+        background-image: url(https://media.contentapi.ea.com/content/dam/eacom/images/2022/07/pogo-heromed-xl-7x2.jpg.adapt.crop16x9.767w.jpg);
+      }
+      .LatestGamesdown{
+        height: 1200px;
+      }
+
+      .longcarddownbuttonflex{
+        flex-direction: column;
+      }
+
+
+      .longcarddownbuttonflex button{
+        padding: 20px 150px;
+      }
+      .longcardup div button{
+        padding: 15px 0px;
+        text-align: center;
+        font-size: 16px;
+        width: 380px;
+      }
+
+      .middleleftbutton button{
+        width: 420px;
+        justify-content: center;
+    }
+
+    .Conversationleft{
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}

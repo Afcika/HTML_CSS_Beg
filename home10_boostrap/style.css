@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.imgg{ 
+    padding-right: 200px;
+
+}
+.container-fluid{
+    gap: 90px;
+}
+
+.navbar-brand{
+    width: 300px;
+    border-right: 1px solid grey;
+}
+
+.x2{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+
+ 

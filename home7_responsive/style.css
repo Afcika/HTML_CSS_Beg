@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    height: 800px;
+    background-color: #f0f2f5;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    height: 300px;
+    justify-content: start;
+    
+  
+ 
+}
+.left img{
+    height: 104px;
+    width: 320px;
+   
+    
+}
+
+.left h1{
+    font-size: 28px;
+    max-width: 500px;
+    
+    line-height: 32px;
+    font-weight: 500;
+    padding: 0px 30px;
+    margin-block: -10px ;
+}
+
+.right{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 8px;
+    gap: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+.right input{
+    border: 1px solid #dddfe2;
+    box-sizing: border-box;
+    width: 92%;
+    color: #1d2129;
+    font-size: 17px;
+    height: 52px;
+    line-height: 16px;
+    padding: 20px;
+    border-radius: 6px;
+  
+}
+.right .b1{
+    width: 92%;
+    height: 48px;
+    color: white;
+    background-color: #1570e6;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.right .b2{
+    height: 48px;
+    width: 193px;
+    font-size :17px;
+font-weight: 700;
+color: white;
+background-color: #41b72a;
+border-radius: 6px;
+border: none;
+box-sizing: border-box;
+}
+
+.right a{
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: solid;
+
+}
+
+.right a:hover{
+    text-decoration: underline;
+}
+
+.right hr{
+    background-color: rgb(218, 221, 225);
+    width: 92%;
+    height: 1px;
+    border: none;
+    margin: 15px;
+}
+
+.rightright span{
+    font-size: 14px;
+    
+}
+.rightright span a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.rightright span a:hover{
+    text-decoration: underline;
+}
+.rightright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+   .hero{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+   }
+
+   .left{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 200px;  
+   }
+   .left h1{
+    font-size: 24px;
+    max-width: 400px;
+   }
+   
+
+
+}
